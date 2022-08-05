@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    background-image: url(tree.jpg);
+    background-size: cover;
+    background-position: center;
+    
+
+}
+
+.a{
+    width: 800px;
+    height: 600px;
+    background: #fff;
+    padding: 40px;
+    margin: 50px auto;
+    background: transparent;
+
+}
+
+.a p{
+text-transform: uppercase;
+text-align: center;
+font-size: 45px;
+margin-bottom: 20px;
+color: antiquewhite;
+
+
+}
+
+.input, .msg .area{
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 2px solid gray;
+    font-size:  14px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+transition:  0.5s ease;
+background: transparent;
+
+}
+
+.login .input{
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+
+.login .input :last-child{
+    margin-right: 0px;
+
+}
+.msg .area{
+    height: 200px;
+}
+
+
+button{
+    width: 250px;
+    left: 35vh;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: rgb(241, 237, 237);
+    text-transform: uppercase;
+     margin: 0 auto;
+     cursor: pointer;
+     right: 35vh;
+     position: absolute;
+     background: transparent;
+     border: 2px solid rgb(122, 115, 115);
+
+} 
+
+.input:focus, 
+.msg .area:focus{
+    border: 4px solid rgb(15, 15, 15);
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    
+}
+
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    position:absolute ;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}

@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    background-image: url(tree.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    
+}
+
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    position:absolute ;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+
+
+
+.Login-form{
+    width: 400px;
+    height: 50vh;
+    top: 50%;
+left: 50%;
+border: 1px solid rgb(7, 7, 7);
+border-radius: 30px;
+transform: translate(-50%, -50%);
+position: absolute;
+overflow: hidden;
+
+}
+.Login-form h1{
+    font-size: 40px;
+text-align: center;
+    text-transform: uppercase;
+    color: rgb(202, 71, 71);
+    margin: 40px 0;
+}
+
+.Login-form p{
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.Login-form input{
+    overflow: hidden;
+    font-size: 16px;
+    margin-left: 5vh;
+    width: 300px;
+    padding: 15px 10px;
+    margin-top: 8%;
+    border: 1;
+    border-radius: 5px;
+color: #fff;
+background: transparent;
+
+}
+.Login-form  button{
+    font-size: 19px;
+    font-weight: bolder;
+    margin: 25px 0;
+    margin-left: 5vh;
+    padding: 10px 15px;
+    width:50% ;
+}
+
+p{
+    
+    position: absolute;
+    left: 5vh;
+}
